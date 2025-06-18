@@ -2,5 +2,10 @@
 	"dependencies": {
 		"cors": "^2.8.5",
 		"express": "^5.1.0"
+	},
+	"scripts": {
+    "dev": "pnpm run dev:all",
+    "build": "pnpm run build:all",
+    "start": "pnpm --filter misskey start"
 	}
 }
