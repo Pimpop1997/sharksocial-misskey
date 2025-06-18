@@ -4,8 +4,8 @@
 		"express": "^5.1.0"
 	},
 	"scripts": {
-    "dev": "pnpm --filter misskey dev",
-    "build": "pnpm --filter misskey build",
-    "start": "pnpm --filter misskey start"
+    "dev": "cd misskey && pnpm dev",
+    "build": "cd misskey && pnpm build",
+    "start": "cd misskey && pnpm start"
 	}
 }
