@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "cd misskey && pnpm run dev",
-    "build": "cd misskey && pnpm run build",
+    "build": "pnpm --filter misskey run build",
     "start": "cd misskey && pnpm run start",
     "migrateandstart": "cd misskey && pnpm run migrateandstart"
   }
