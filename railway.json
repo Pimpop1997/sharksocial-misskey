@@ -1,0 +1,7 @@
+{
+  "dockerfilePath": "misskey/Dockerfile",
+  "plugins": [
+    { "name": "postgresql" },
+    { "name": "redis" }
+  ]
+}
