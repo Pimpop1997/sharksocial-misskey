@@ -1,0 +1,1 @@
+<template><div>Mock Wallet Page</div></template>

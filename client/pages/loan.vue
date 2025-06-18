@@ -1,0 +1,1 @@
+<template><div>Mock Loan Page</div></template>

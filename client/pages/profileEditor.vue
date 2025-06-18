@@ -1,0 +1,1 @@
+<template><div>Mock Profile Editor</div></template>

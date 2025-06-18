@@ -1,0 +1,82 @@
+body {
+  background: #0f1a1a;
+  color: #39ff14;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.terminal {
+  background: rgba(15, 26, 26, 0.98);
+  border: 2px solid #39ff14;
+  border-radius: 12px;
+  width: 680px;
+  margin: 40px auto;
+  box-shadow: 0 0 40px #39ff14a0;
+  position: relative;
+  z-index: 2;
+}
+.terminal-header {
+  background: #1a2f2f;
+  color: #39ff14;
+  padding: 14px 24px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 1px solid #39ff14;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #39ff14;
+}
+.terminal-body {
+  padding: 24px;
+  min-height: 400px;
+}
+.cli {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+.cli input {
+  background: transparent;
+  border: none;
+  color: #39ff14;
+  font-family: inherit;
+  font-size: 1.1em;
+  outline: none;
+  width: 80%;
+  letter-spacing: 1.5px;
+  animation: typewriter 1s steps(20, end);
+}
+#output {
+  margin-top: 20px;
+  font-size: 1.05em;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.typewriter {
+  font-size: 1.1em;
+  color: #39ff14;
+  margin-bottom: 12px;
+  min-height: 24px;
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  border-left: 2px solid #39ff14;
+  padding-left: 8px;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+@keyframes blink-cursor {
+  0%, 100% { border-color: #39ff14; }
+  50% { border-color: transparent; }
+}
+.matrix-rain {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 1;
+}
+/* Matrix Rain Effect */
+.matrix-rain-canvas {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 1;
+}
