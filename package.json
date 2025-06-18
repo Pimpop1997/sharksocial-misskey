@@ -5,7 +5,7 @@
 	},
 	"scripts": {
     "dev": "cd misskey/packages/backend && pnpm dev",
-    "build": "cd misskey/packages/backend && swc src -d built -D --strip-leading-paths",
-    "start": "cd misskey/packages/backend && node ./built/boot/entry.js"
+    "build": "cd misskey/packages/backend && pnpm build",
+    "start": "cd misskey/packages/backend && pnpm start"
 	}
 }
