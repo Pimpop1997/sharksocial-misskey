@@ -4,8 +4,8 @@
 		"express": "^5.1.0"
 	},
 	"scripts": {
-    "dev": "cd misskey && pnpm dev",
-    "build": "cd misskey && pnpm build",
-    "start": "cd misskey && pnpm start"
+    "dev": "cd misskey/packages/backend && pnpm dev",
+    "build": "cd misskey/packages/backend && swc src -d built -D --strip-leading-paths",
+    "start": "cd misskey/packages/backend && node ./built/boot/entry.js"
 	}
 }
